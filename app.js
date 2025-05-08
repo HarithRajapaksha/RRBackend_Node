@@ -34,7 +34,7 @@ const app = express();
 require('dotenv').config(); // Load variables from .env
 
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT||5000;
 app.use(bodyParser.json());
 app.use(express.json());
 
